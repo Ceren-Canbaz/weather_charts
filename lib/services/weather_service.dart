@@ -8,42 +8,27 @@ class WeatherService {
     final String response = await rootBundle.loadString('assets/weather.json');
     final List<dynamic> jsonWeatherData = json.decode(response);
 
-    // Tüm saatlik verileri `Weather` nesnelerine dönüştür
-    final List<Weather> hourlyWeather = jsonWeatherData
-        .map((weather) => Weather.fromMap(weather as Map<String, dynamic>))
-        .toList();
+    final List<DailyWeather> dailyWeatherList =
+        jsonWeatherData.map((dailyData) {
+      final List<Weather> hourlyWeather = (dailyData as List<dynamic>)
+          .map((weather) => Weather.fromMap(weather as Map<String, dynamic>))
+          .toList();
 
-    // Günlere göre grupla
-    final Map<DateTime, List<Weather>> dailyGroupedWeather = {};
+      final double highTemperature = hourlyWeather
+          .map((weather) => weather.temperature)
+          .reduce((a, b) => a > b ? a : b);
 
-    for (var weather in hourlyWeather) {
-      final dayKey = DateTime(
-        weather.timeStamp.year,
-        weather.timeStamp.month,
-        weather.timeStamp.day,
+      final double lowTemperature = hourlyWeather
+          .map((weather) => weather.temperature)
+          .reduce((a, b) => a < b ? a : b);
+
+      return DailyWeather(
+        hourlyWeather: hourlyWeather,
+        highTemperature: highTemperature,
+        lowTemperature: lowTemperature,
       );
+    }).toList();
 
-      dailyGroupedWeather.putIfAbsent(dayKey, () => []).add(weather);
-    }
-
-    return dailyGroupedWeather.values
-        .map((hourlyWeather) => _createDailyWeather(hourlyWeather))
-        .toList();
-  }
-
-  DailyWeather _createDailyWeather(List<Weather> hourlyWeather) {
-    final double highTemperature = hourlyWeather
-        .map((weather) => weather.temperature)
-        .reduce((a, b) => a > b ? a : b);
-
-    final double lowTemperature = hourlyWeather
-        .map((weather) => weather.temperature)
-        .reduce((a, b) => a < b ? a : b);
-
-    return DailyWeather(
-      hourlyWeather: hourlyWeather,
-      highTemperature: highTemperature,
-      lowTemperature: lowTemperature,
-    );
+    return dailyWeatherList;
   }
 }
