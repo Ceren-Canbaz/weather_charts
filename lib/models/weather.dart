@@ -15,9 +15,10 @@ class Weather {
   factory Weather.fromMap(Map<String, dynamic> map) {
     return Weather(
       timeStamp: DateTime.parse(map['timeStamp'] as String),
-      temperature: map['temperature'] as double,
+      temperature: (map['temperature'] as num).toDouble(),
       wind: Wind.fromMap(map['wind'] as Map<String, dynamic>),
-      rainfall: map['rainfall'] != null ? map['rainfall'] as double : 0.0,
+      rainfall:
+          map['rainfall'] != null ? (map['rainfall'] as num).toDouble() : 0.0,
     );
   }
 }

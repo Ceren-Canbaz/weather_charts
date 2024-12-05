@@ -8,8 +8,8 @@ class Wind {
   });
   factory Wind.fromMap(Map<String, dynamic> map) {
     return Wind(
-      speed: map['speed'] as double,
-      direction: map['direction'] as double,
+      speed: (map['speed'] as num).toDouble(),
+      direction: (map['direction'] as num).toDouble(),
     );
   }
 }
