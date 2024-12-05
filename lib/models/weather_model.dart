@@ -12,4 +12,12 @@ class Weather {
     required this.wind,
     required this.rainfall,
   });
+  factory Weather.fromMap(Map<String, dynamic> map) {
+    return Weather(
+      timeStamp: DateTime.parse(map['timeStamp'] as String),
+      temperature: map['temperature'] as double,
+      wind: Wind.fromMap(map['wind'] as Map<String, dynamic>),
+      rainfall: map['rainfall'] != null ? map['rainfall'] as double : 0.0,
+    );
+  }
 }
