@@ -24,8 +24,8 @@ void main() {
           await rootBundle.loadString('assets/weather.json');
 
       final List<dynamic> jsonData = json.decode(response);
-
-      final List<Weather> weatherList = jsonData
+      final List<dynamic> weatherData = jsonData[0];
+      final List<Weather> weatherList = weatherData
           .map((data) => Weather.fromMap(data as Map<String, dynamic>))
           .toList();
 

@@ -1,218 +1,1529 @@
 [
-    {
-        "timeStamp": "2024-12-02T00:00:00.000",
-        "temperature": 26.3,
-        "wind": {
-            "speed": 15,
-            "direction": 0
+    [
+        {
+            "timeStamp": "2024-12-02T00:00:00.000",
+            "temperature": 26.3,
+            "wind": {
+                "speed": 15,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T01:00:00.000",
-        "temperature": 28.4,
-        "wind": {
-            "speed": 6,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T01:00:00.000",
+            "temperature": 28.4,
+            "wind": {
+                "speed": 6,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T02:00:00.000",
-        "temperature": 29.3,
-        "wind": {
-            "speed": 15,
-            "direction": 10
+        {
+            "timeStamp": "2024-12-02T02:00:00.000",
+            "temperature": 29.3,
+            "wind": {
+                "speed": 15,
+                "direction": 10
+            },
+            "rainfall": 0.22
         },
-        "rainfall": 0.22
-    },
-    {
-        "timeStamp": "2024-12-02T03:00:00.000",
-        "temperature": 26,
-        "wind": {
-            "speed": 18,
-            "direction": 15
+        {
+            "timeStamp": "2024-12-02T03:00:00.000",
+            "temperature": 26,
+            "wind": {
+                "speed": 18,
+                "direction": 15
+            },
+            "rainfall": 0.92
         },
-        "rainfall": 0.92
-    },
-    {
-        "timeStamp": "2024-12-02T04:00:00.000",
-        "temperature": 26.8,
-        "wind": {
-            "speed": 3,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T04:00:00.000",
+            "temperature": 26.8,
+            "wind": {
+                "speed": 3,
+                "direction": 0
+            },
+            "rainfall": 1.46
         },
-        "rainfall": 1.46
-    },
-    {
-        "timeStamp": "2024-12-02T05:00:00.000",
-        "temperature": 26.6,
-        "wind": {
-            "speed": 27,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T05:00:00.000",
+            "temperature": 26.6,
+            "wind": {
+                "speed": 27,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T06:00:00.000",
-        "temperature": 25.2,
-        "wind": {
-            "speed": 9,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T06:00:00.000",
+            "temperature": 25.2,
+            "wind": {
+                "speed": 9,
+                "direction": 0
+            },
+            "rainfall": 0.16
         },
-        "rainfall": 0.16
-    },
-    {
-        "timeStamp": "2024-12-02T07:00:00.000",
-        "temperature": 29,
-        "wind": {
-            "speed": 27,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T07:00:00.000",
+            "temperature": 29,
+            "wind": {
+                "speed": 27,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T08:00:00.000",
-        "temperature": 20,
-        "wind": {
-            "speed": 21,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T08:00:00.000",
+            "temperature": 20,
+            "wind": {
+                "speed": 21,
+                "direction": 0
+            },
+            "rainfall": 1.7
         },
-        "rainfall": 1.7
-    },
-    {
-        "timeStamp": "2024-12-02T09:00:00.000",
-        "temperature": 29,
-        "wind": {
-            "speed": 15,
-            "direction": 180
+        {
+            "timeStamp": "2024-12-02T09:00:00.000",
+            "temperature": 29,
+            "wind": {
+                "speed": 15,
+                "direction": 180
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T10:00:00.000",
-        "temperature": 29.3,
-        "wind": {
-            "speed": 21,
-            "direction": 200
+        {
+            "timeStamp": "2024-12-02T10:00:00.000",
+            "temperature": 29.3,
+            "wind": {
+                "speed": 21,
+                "direction": 200
+            },
+            "rainfall": 0.92
         },
-        "rainfall": 0.92
-    },
-    {
-        "timeStamp": "2024-12-02T11:00:00.000",
-        "temperature": 20.9,
-        "wind": {
-            "speed": 15,
-            "direction": 300
+        {
+            "timeStamp": "2024-12-02T11:00:00.000",
+            "temperature": 20.9,
+            "wind": {
+                "speed": 15,
+                "direction": 300
+            },
+            "rainfall": 1.2
         },
-        "rainfall": 1.2
-    },
-    {
-        "timeStamp": "2024-12-02T12:00:00.000",
-        "temperature": 21.3,
-        "wind": {
-            "speed": 9,
-            "direction": 355
+        {
+            "timeStamp": "2024-12-02T12:00:00.000",
+            "temperature": 21.3,
+            "wind": {
+                "speed": 9,
+                "direction": 355
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T13:00:00.000",
-        "temperature": 25.2,
-        "wind": {
-            "speed": 21,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T13:00:00.000",
+            "temperature": 25.2,
+            "wind": {
+                "speed": 21,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T14:00:00.000",
-        "temperature": 28.8,
-        "wind": {
-            "speed": 6,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T14:00:00.000",
+            "temperature": 28.8,
+            "wind": {
+                "speed": 6,
+                "direction": 0
+            },
+            "rainfall": 0.64
         },
-        "rainfall": 0.64
-    },
-    {
-        "timeStamp": "2024-12-02T15:00:00.000",
-        "temperature": 27.1,
-        "wind": {
-            "speed": 3,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T15:00:00.000",
+            "temperature": 27.1,
+            "wind": {
+                "speed": 3,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T16:00:00.000",
-        "temperature": 21.2,
-        "wind": {
-            "speed": 9,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T16:00:00.000",
+            "temperature": 21.2,
+            "wind": {
+                "speed": 9,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T17:00:00.000",
-        "temperature": 22.2,
-        "wind": {
-            "speed": 3,
-            "direction": 20
+        {
+            "timeStamp": "2024-12-02T17:00:00.000",
+            "temperature": 22.2,
+            "wind": {
+                "speed": 3,
+                "direction": 20
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T18:00:00.000",
-        "temperature": 26.4,
-        "wind": {
-            "speed": 12,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T18:00:00.000",
+            "temperature": 26.4,
+            "wind": {
+                "speed": 12,
+                "direction": 0
+            },
+            "rainfall": 0.06
         },
-        "rainfall": 0.06
-    },
-    {
-        "timeStamp": "2024-12-02T19:00:00.000",
-        "temperature": 23.4,
-        "wind": {
-            "speed": 6,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T19:00:00.000",
+            "temperature": 23.4,
+            "wind": {
+                "speed": 6,
+                "direction": 0
+            },
+            "rainfall": 1.72
         },
-        "rainfall": 1.72
-    },
-    {
-        "timeStamp": "2024-12-02T20:00:00.000",
-        "temperature": 29.2,
-        "wind": {
-            "speed": 3,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T20:00:00.000",
+            "temperature": 29.2,
+            "wind": {
+                "speed": 3,
+                "direction": 0
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T21:00:00.000",
-        "temperature": 22.6,
-        "wind": {
-            "speed": 15,
-            "direction": 40
+        {
+            "timeStamp": "2024-12-02T21:00:00.000",
+            "temperature": 22.6,
+            "wind": {
+                "speed": 15,
+                "direction": 40
+            },
+            "rainfall": null
         },
-        "rainfall": null
-    },
-    {
-        "timeStamp": "2024-12-02T22:00:00.000",
-        "temperature": 27.2,
-        "wind": {
-            "speed": 27,
-            "direction": 0
+        {
+            "timeStamp": "2024-12-02T22:00:00.000",
+            "temperature": 27.2,
+            "wind": {
+                "speed": 27,
+                "direction": 0
+            },
+            "rainfall": 0.02
         },
-        "rainfall": 0.02
-    },
-    {
-        "timeStamp": "2024-12-02T23:00:00.000",
-        "temperature": 21,
-        "wind": {
-            "speed": 12,
-            "direction": 0
-        },
-        "rainfall": 0.7
-    }
+        {
+            "timeStamp": "2024-12-02T23:00:00.000",
+            "temperature": 21,
+            "wind": {
+                "speed": 12,
+                "direction": 0
+            },
+            "rainfall": 0.7
+        }
+    ],
+        [
+            {
+                "timeStamp": "2024-12-03T00:00:00.000",
+                "temperature": 23.1,
+                "wind": {
+                    "speed": 12,
+                    "direction": 90
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-03T01:00:00.000",
+                "temperature": 22.8,
+                "wind": {
+                    "speed": 8,
+                    "direction": 120
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T02:00:00.000",
+                "temperature": 22.5,
+                "wind": {
+                    "speed": 11,
+                    "direction": 180
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-03T03:00:00.000",
+                "temperature": 21.9,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T04:00:00.000",
+                "temperature": 21.2,
+                "wind": {
+                    "speed": 6,
+                    "direction": 0
+                },
+                "rainfall": 0.8
+            },
+            {
+                "timeStamp": "2024-12-03T05:00:00.000",
+                "temperature": 20.8,
+                "wind": {
+                    "speed": 15,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T06:00:00.000",
+                "temperature": 20.5,
+                "wind": {
+                    "speed": 9,
+                    "direction": 45
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T07:00:00.000",
+                "temperature": 21.3,
+                "wind": {
+                    "speed": 7,
+                    "direction": 90
+                },
+                "rainfall": 1.0
+            },
+            {
+                "timeStamp": "2024-12-03T08:00:00.000",
+                "temperature": 22.7,
+                "wind": {
+                    "speed": 10,
+                    "direction": 180
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-03T09:00:00.000",
+                "temperature": 23.9,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T10:00:00.000",
+                "temperature": 24.3,
+                "wind": {
+                    "speed": 8,
+                    "direction": 0
+                },
+                "rainfall": 0.7
+            },
+            {
+                "timeStamp": "2024-12-03T11:00:00.000",
+                "temperature": 25.0,
+                "wind": {
+                    "speed": 11,
+                    "direction": 45
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T12:00:00.000",
+                "temperature": 26.2,
+                "wind": {
+                    "speed": 9,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-03T13:00:00.000",
+                "temperature": 27.8,
+                "wind": {
+                    "speed": 7,
+                    "direction": 120
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T14:00:00.000",
+                "temperature": 28.5,
+                "wind": {
+                    "speed": 6,
+                    "direction": 180
+                },
+                "rainfall": 0.9
+            },
+            {
+                "timeStamp": "2024-12-03T15:00:00.000",
+                "temperature": 29.1,
+                "wind": {
+                    "speed": 5,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T16:00:00.000",
+                "temperature": 30.0,
+                "wind": {
+                    "speed": 10,
+                    "direction": 0
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-03T17:00:00.000",
+                "temperature": 29.3,
+                "wind": {
+                    "speed": 11,
+                    "direction": 45
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T18:00:00.000",
+                "temperature": 28.0,
+                "wind": {
+                    "speed": 12,
+                    "direction": 90
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-03T19:00:00.000",
+                "temperature": 26.7,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T20:00:00.000",
+                "temperature": 25.5,
+                "wind": {
+                    "speed": 14,
+                    "direction": 270
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-03T21:00:00.000",
+                "temperature": 24.1,
+                "wind": {
+                    "speed": 13,
+                    "direction": 0
+                },
+                "rainfall": 0.8
+            },
+            {
+                "timeStamp": "2024-12-03T22:00:00.000",
+                "temperature": 23.3,
+                "wind": {
+                    "speed": 9,
+                    "direction": 45
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-03T23:00:00.000",
+                "temperature": 22.7,
+                "wind": {
+                    "speed": 7,
+                    "direction": 90
+                },
+                "rainfall": 0.5
+            }
+        ],
+        [
+            {
+                "timeStamp": "2024-12-04T00:00:00.000",
+                "temperature": 26.6,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": 1.04
+            },
+            {
+                "timeStamp": "2024-12-04T01:00:00.000",
+                "temperature": 19.4,
+                "wind": {
+                    "speed": 19,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T02:00:00.000",
+                "temperature": 23.7,
+                "wind": {
+                    "speed": 22,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T03:00:00.000",
+                "temperature": 31.2,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T04:00:00.000",
+                "temperature": 20.1,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": 0.13
+            },
+            {
+                "timeStamp": "2024-12-04T05:00:00.000",
+                "temperature": 30.2,
+                "wind": {
+                    "speed": 18,
+                    "direction": 270
+                },
+                "rainfall": 0.56
+            },
+            {
+                "timeStamp": "2024-12-04T06:00:00.000",
+                "temperature": 22.8,
+                "wind": {
+                    "speed": 7,
+                    "direction": 270
+                },
+                "rainfall": 1.27
+            },
+            {
+                "timeStamp": "2024-12-04T07:00:00.000",
+                "temperature": 26.9,
+                "wind": {
+                    "speed": 13,
+                    "direction": 180
+                },
+                "rainfall": 0.16
+            },
+            {
+                "timeStamp": "2024-12-04T08:00:00.000",
+                "temperature": 27.7,
+                "wind": {
+                    "speed": 12,
+                    "direction": 180
+                },
+                "rainfall": 1.49
+            },
+            {
+                "timeStamp": "2024-12-04T09:00:00.000",
+                "temperature": 19.3,
+                "wind": {
+                    "speed": 18,
+                    "direction": 270
+                },
+                "rainfall": 1.39
+            },
+            {
+                "timeStamp": "2024-12-04T10:00:00.000",
+                "temperature": 19.2,
+                "wind": {
+                    "speed": 9,
+                    "direction": 270
+                },
+                "rainfall": 0.28
+            },
+            {
+                "timeStamp": "2024-12-04T11:00:00.000",
+                "temperature": 21.4,
+                "wind": {
+                    "speed": 19,
+                    "direction": 0
+                },
+                "rainfall": 0.58
+            },
+            {
+                "timeStamp": "2024-12-04T12:00:00.000",
+                "temperature": 31.0,
+                "wind": {
+                    "speed": 11,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T13:00:00.000",
+                "temperature": 24.9,
+                "wind": {
+                    "speed": 19,
+                    "direction": 90
+                },
+                "rainfall": 0.83
+            },
+            {
+                "timeStamp": "2024-12-04T14:00:00.000",
+                "temperature": 29.8,
+                "wind": {
+                    "speed": 14,
+                    "direction": 180
+                },
+                "rainfall": 1.28
+            },
+            {
+                "timeStamp": "2024-12-04T15:00:00.000",
+                "temperature": 26.7,
+                "wind": {
+                    "speed": 19,
+                    "direction": 360
+                },
+                "rainfall": 1.28
+            },
+            {
+                "timeStamp": "2024-12-04T16:00:00.000",
+                "temperature": 28.4,
+                "wind": {
+                    "speed": 18,
+                    "direction": 270
+                },
+                "rainfall": 0.75
+            },
+            {
+                "timeStamp": "2024-12-04T17:00:00.000",
+                "temperature": 20.8,
+                "wind": {
+                    "speed": 20,
+                    "direction": 90
+                },
+                "rainfall": 1.37
+            },
+            {
+                "timeStamp": "2024-12-04T18:00:00.000",
+                "temperature": 28.6,
+                "wind": {
+                    "speed": 20,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T19:00:00.000",
+                "temperature": 23.5,
+                "wind": {
+                    "speed": 13,
+                    "direction": 270
+                },
+                "rainfall": 1.1
+            },
+            {
+                "timeStamp": "2024-12-04T20:00:00.000",
+                "temperature": 27.3,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T21:00:00.000",
+                "temperature": 25.7,
+                "wind": {
+                    "speed": 7,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T22:00:00.000",
+                "temperature": 24.5,
+                "wind": {
+                    "speed": 21,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-04T23:00:00.000",
+                "temperature": 30.9,
+                "wind": {
+                    "speed": 10,
+                    "direction": 360
+                },
+                "rainfall": 0.94
+            }
+        ],
+        [
+            {
+                "timeStamp": "2024-12-05T00:00:00.000",
+                "temperature": 22.4,
+                "wind": {
+                    "speed": 15,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-05T01:00:00.000",
+                "temperature": 23.7,
+                "wind": {
+                    "speed": 11,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T02:00:00.000",
+                "temperature": 24.3,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-05T03:00:00.000",
+                "temperature": 25.1,
+                "wind": {
+                    "speed": 10,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T04:00:00.000",
+                "temperature": 26.5,
+                "wind": {
+                    "speed": 13,
+                    "direction": 90
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-05T05:00:00.000",
+                "temperature": 27.3,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": 0.7
+            },
+            {
+                "timeStamp": "2024-12-05T06:00:00.000",
+                "temperature": 28.1,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T07:00:00.000",
+                "temperature": 29.2,
+                "wind": {
+                    "speed": 14,
+                    "direction": 0
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-05T08:00:00.000",
+                "temperature": 30.3,
+                "wind": {
+                    "speed": 16,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T09:00:00.000",
+                "temperature": 31.1,
+                "wind": {
+                    "speed": 18,
+                    "direction": 90
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-05T10:00:00.000",
+                "temperature": 30.9,
+                "wind": {
+                    "speed": 17,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T11:00:00.000",
+                "temperature": 29.5,
+                "wind": {
+                    "speed": 15,
+                    "direction": 270
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-05T12:00:00.000",
+                "temperature": 28.4,
+                "wind": {
+                    "speed": 10,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T13:00:00.000",
+                "temperature": 27.2,
+                "wind": {
+                    "speed": 8,
+                    "direction": 360
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-05T14:00:00.000",
+                "temperature": 26.1,
+                "wind": {
+                    "speed": 9,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-05T15:00:00.000",
+                "temperature": 25.3,
+                "wind": {
+                    "speed": 11,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T16:00:00.000",
+                "temperature": 24.6,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-05T17:00:00.000",
+                "temperature": 23.8,
+                "wind": {
+                    "speed": 12,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T18:00:00.000",
+                "temperature": 23.1,
+                "wind": {
+                    "speed": 14,
+                    "direction": 360
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-05T19:00:00.000",
+                "temperature": 22.5,
+                "wind": {
+                    "speed": 13,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T20:00:00.000",
+                "temperature": 21.9,
+                "wind": {
+                    "speed": 12,
+                    "direction": 180
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-05T21:00:00.000",
+                "temperature": 21.3,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-05T22:00:00.000",
+                "temperature": 20.8,
+                "wind": {
+                    "speed": 9,
+                    "direction": 0
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-05T23:00:00.000",
+                "temperature": 20.3,
+                "wind": {
+                    "speed": 8,
+                    "direction": 360
+                },
+                "rainfall": null
+            }
+        ],
+        [
+            {
+                "timeStamp": "2024-12-06T00:00:00.000",
+                "temperature": 23.5,
+                "wind": {
+                    "speed": 12,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-06T01:00:00.000",
+                "temperature": 22.9,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T02:00:00.000",
+                "temperature": 24.7,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-06T03:00:00.000",
+                "temperature": 25.3,
+                "wind": {
+                    "speed": 13,
+                    "direction": 360
+                },
+                "rainfall": 0.7
+            },
+            {
+                "timeStamp": "2024-12-06T04:00:00.000",
+                "temperature": 26.1,
+                "wind": {
+                    "speed": 9,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T05:00:00.000",
+                "temperature": 27.5,
+                "wind": {
+                    "speed": 18,
+                    "direction": 180
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-06T06:00:00.000",
+                "temperature": 28.3,
+                "wind": {
+                    "speed": 14,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T07:00:00.000",
+                "temperature": 29.1,
+                "wind": {
+                    "speed": 16,
+                    "direction": 0
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-06T08:00:00.000",
+                "temperature": 28.7,
+                "wind": {
+                    "speed": 12,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T09:00:00.000",
+                "temperature": 27.8,
+                "wind": {
+                    "speed": 11,
+                    "direction": 90
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-06T10:00:00.000",
+                "temperature": 26.9,
+                "wind": {
+                    "speed": 10,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T11:00:00.000",
+                "temperature": 25.7,
+                "wind": {
+                    "speed": 9,
+                    "direction": 270
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-06T12:00:00.000",
+                "temperature": 26.5,
+                "wind": {
+                    "speed": 8,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T13:00:00.000",
+                "temperature": 27.2,
+                "wind": {
+                    "speed": 14,
+                    "direction": 360
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-06T14:00:00.000",
+                "temperature": 28.3,
+                "wind": {
+                    "speed": 13,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T15:00:00.000",
+                "temperature": 29.7,
+                "wind": {
+                    "speed": 18,
+                    "direction": 180
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-06T16:00:00.000",
+                "temperature": 28.5,
+                "wind": {
+                    "speed": 20,
+                    "direction": 270
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-06T17:00:00.000",
+                "temperature": 27.2,
+                "wind": {
+                    "speed": 15,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T18:00:00.000",
+                "temperature": 26.8,
+                "wind": {
+                    "speed": 11,
+                    "direction": 360
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-06T19:00:00.000",
+                "temperature": 25.4,
+                "wind": {
+                    "speed": 9,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T20:00:00.000",
+                "temperature": 24.6,
+                "wind": {
+                    "speed": 7,
+                    "direction": 180
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-06T21:00:00.000",
+                "temperature": 23.8,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-06T22:00:00.000",
+                "temperature": 23.3,
+                "wind": {
+                    "speed": 10,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-06T23:00:00.000",
+                "temperature": 22.7,
+                "wind": {
+                    "speed": 8,
+                    "direction": 360
+                },
+                "rainfall": 0.5
+            }
+        ],
+        [
+            {
+                "timeStamp": "2024-12-07T00:00:00.000",
+                "temperature": 21.7,
+                "wind": {
+                    "speed": 13,
+                    "direction": 90
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-07T01:00:00.000",
+                "temperature": 22.1,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T02:00:00.000",
+                "temperature": 23.4,
+                "wind": {
+                    "speed": 11,
+                    "direction": 270
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-07T03:00:00.000",
+                "temperature": 24.6,
+                "wind": {
+                    "speed": 10,
+                    "direction": 360
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-07T04:00:00.000",
+                "temperature": 25.8,
+                "wind": {
+                    "speed": 14,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T05:00:00.000",
+                "temperature": 26.2,
+                "wind": {
+                    "speed": 12,
+                    "direction": 180
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-07T06:00:00.000",
+                "temperature": 27.1,
+                "wind": {
+                    "speed": 16,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T07:00:00.000",
+                "temperature": 28.5,
+                "wind": {
+                    "speed": 18,
+                    "direction": 0
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-07T08:00:00.000",
+                "temperature": 29.7,
+                "wind": {
+                    "speed": 14,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T09:00:00.000",
+                "temperature": 30.3,
+                "wind": {
+                    "speed": 13,
+                    "direction": 90
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-07T10:00:00.000",
+                "temperature": 31.1,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T11:00:00.000",
+                "temperature": 29.9,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-07T12:00:00.000",
+                "temperature": 28.2,
+                "wind": {
+                    "speed": 11,
+                    "direction": 0
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T13:00:00.000",
+                "temperature": 27.5,
+                "wind": {
+                    "speed": 10,
+                    "direction": 360
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-07T14:00:00.000",
+                "temperature": 26.8,
+                "wind": {
+                    "speed": 14,
+                    "direction": 90
+                },
+                "rainfall": 0.7
+            },
+            {
+                "timeStamp": "2024-12-07T15:00:00.000",
+                "temperature": 25.6,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T16:00:00.000",
+                "temperature": 24.7,
+                "wind": {
+                    "speed": 13,
+                    "direction": 270
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-07T17:00:00.000",
+                "temperature": 23.4,
+                "wind": {
+                    "speed": 12,
+                    "direction": 0
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-07T18:00:00.000",
+                "temperature": 22.8,
+                "wind": {
+                    "speed": 11,
+                    "direction": 360
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T19:00:00.000",
+                "temperature": 22.1,
+                "wind": {
+                    "speed": 10,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-07T20:00:00.000",
+                "temperature": 21.9,
+                "wind": {
+                    "speed": 14,
+                    "direction": 180
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-07T21:00:00.000",
+                "temperature": 21.3,
+                "wind": {
+                    "speed": 15,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-07T22:00:00.000",
+                "temperature": 20.7,
+                "wind": {
+                    "speed": 13,
+                    "direction": 0
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-07T23:00:00.000",
+                "temperature": 20.1,
+                "wind": {
+                    "speed": 12,
+                    "direction": 360
+                },
+                "rainfall": null
+            }
+        ],
+        [
+            {
+                "timeStamp": "2024-12-08T00:00:00.000",
+                "temperature": 20.5,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-08T01:00:00.000",
+                "temperature": 21.7,
+                "wind": {
+                    "speed": 12,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T02:00:00.000",
+                "temperature": 22.3,
+                "wind": {
+                    "speed": 11,
+                    "direction": 180
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-08T03:00:00.000",
+                "temperature": 23.1,
+                "wind": {
+                    "speed": 14,
+                    "direction": 360
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-08T04:00:00.000",
+                "temperature": 24.6,
+                "wind": {
+                    "speed": 16,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T05:00:00.000",
+                "temperature": 25.7,
+                "wind": {
+                    "speed": 13,
+                    "direction": 270
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-08T06:00:00.000",
+                "temperature": 26.3,
+                "wind": {
+                    "speed": 15,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T07:00:00.000",
+                "temperature": 27.5,
+                "wind": {
+                    "speed": 18,
+                    "direction": 360
+                },
+                "rainfall": 0.6
+            },
+            {
+                "timeStamp": "2024-12-08T08:00:00.000",
+                "temperature": 28.1,
+                "wind": {
+                    "speed": 14,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T09:00:00.000",
+                "temperature": 29.4,
+                "wind": {
+                    "speed": 10,
+                    "direction": 270
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-08T10:00:00.000",
+                "temperature": 30.6,
+                "wind": {
+                    "speed": 12,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T11:00:00.000",
+                "temperature": 31.2,
+                "wind": {
+                    "speed": 11,
+                    "direction": 360
+                },
+                "rainfall": 0.7
+            },
+            {
+                "timeStamp": "2024-12-08T12:00:00.000",
+                "temperature": 30.8,
+                "wind": {
+                    "speed": 14,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-08T13:00:00.000",
+                "temperature": 29.5,
+                "wind": {
+                    "speed": 16,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T14:00:00.000",
+                "temperature": 28.3,
+                "wind": {
+                    "speed": 18,
+                    "direction": 180
+                },
+                "rainfall": 0.3
+            },
+            {
+                "timeStamp": "2024-12-08T15:00:00.000",
+                "temperature": 27.4,
+                "wind": {
+                    "speed": 12,
+                    "direction": 360
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-08T16:00:00.000",
+                "temperature": 26.8,
+                "wind": {
+                    "speed": 15,
+                    "direction": 90
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T17:00:00.000",
+                "temperature": 25.9,
+                "wind": {
+                    "speed": 14,
+                    "direction": 270
+                },
+                "rainfall": 0.5
+            },
+            {
+                "timeStamp": "2024-12-08T18:00:00.000",
+                "temperature": 25.3,
+                "wind": {
+                    "speed": 13,
+                    "direction": 180
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T19:00:00.000",
+                "temperature": 24.7,
+                "wind": {
+                    "speed": 10,
+                    "direction": 360
+                },
+                "rainfall": 0.4
+            },
+            {
+                "timeStamp": "2024-12-08T20:00:00.000",
+                "temperature": 23.8,
+                "wind": {
+                    "speed": 11,
+                    "direction": 90
+                },
+                "rainfall": 0.2
+            },
+            {
+                "timeStamp": "2024-12-08T21:00:00.000",
+                "temperature": 23.2,
+                "wind": {
+                    "speed": 12,
+                    "direction": 270
+                },
+                "rainfall": null
+            },
+            {
+                "timeStamp": "2024-12-08T22:00:00.000",
+                "temperature": 22.6,
+                "wind": {
+                    "speed": 10,
+                    "direction": 180
+                },
+                "rainfall": 0.1
+            },
+            {
+                "timeStamp": "2024-12-08T23:00:00.000",
+                "temperature": 22.1,
+                "wind": {
+                    "speed": 12,
+                    "direction": 360
+                },
+                "rainfall": null
+            }
+        ]
+    
 ]
