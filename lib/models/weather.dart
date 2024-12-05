@@ -1,4 +1,4 @@
-import 'package:weather_charts/models/wind_model.dart';
+import 'package:weather_charts/models/wind.dart';
 
 class Weather {
   final DateTime timeStamp;
