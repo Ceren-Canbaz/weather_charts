@@ -5,6 +5,7 @@ class TemperatureChart extends StatelessWidget {
   final List<double> lowTemperatures;
   final List<String> days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
+  // Constructor to initialize high and low temperatures
   TemperatureChart({
     super.key,
     required this.highTemperatures,
@@ -28,6 +29,7 @@ class _TemperatureChartPainter extends CustomPainter {
   final List<double> lowTemperatures;
   final List<String> days;
 
+  // Constructor to initialize temperature data and day labels
   _TemperatureChartPainter({
     required this.highTemperatures,
     required this.lowTemperatures,
@@ -36,50 +38,61 @@ class _TemperatureChartPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
+    // Paint for the background
     final Paint backgroundPaint = Paint()
       ..color = Colors.black87
       ..style = PaintingStyle.fill;
 
+    // Paint for the grid lines
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
       ..strokeWidth = 1;
 
+    // Paint for the high temperature line
     final Paint highTempPaint = Paint()
       ..color = Colors.blue
-      ..strokeWidth = 2
+      ..strokeWidth = 4
       ..style = PaintingStyle.stroke;
 
+    // Paint for the low temperature line
     final Paint lowTempPaint = Paint()
       ..color = Colors.lightBlueAccent
-      ..strokeWidth = 2
+      ..strokeWidth = 4
       ..style = PaintingStyle.stroke;
 
+    // Paint for the shadow under the high temperature line
     final Paint highShadowPaint = Paint()
       ..color = Colors.blue.withOpacity(0.1)
       ..style = PaintingStyle.fill;
 
+    // Paint for the shadow under the low temperature line
     final Paint lowShadowPaint = Paint()
       ..color = const Color.fromARGB(255, 26, 28, 29).withOpacity(0.1)
       ..style = PaintingStyle.fill;
 
+    // Text painter for drawing labels
     final TextPainter textPainter = TextPainter(
       textAlign: TextAlign.center,
       textDirection: TextDirection.ltr,
     );
 
+    // Draw the background
     canvas.drawRect(
         Rect.fromLTWH(0, 0, size.width, size.height), backgroundPaint);
 
+    // Calculate chart dimensions
     final double chartHeight = size.height - 60;
     final double chartWidth = size.width - 60;
     final double xStep = chartWidth / (days.length - 1);
 
-    // Degrees Y axis
+    // Draw the Y-axis (temperature degrees)
     for (int i = 0; i <= 10; i++) {
       final double y = size.height - 40 - (chartHeight / 10) * i;
 
+      // Draw horizontal grid lines
       canvas.drawLine(Offset(30, y), Offset(size.width - 30, y), gridPaint);
 
+      // Draw Y-axis labels every 5 steps
       if (i % 5 == 0) {
         final int labelValue = i * 10;
         textPainter.text = TextSpan(
@@ -95,11 +108,12 @@ class _TemperatureChartPainter extends CustomPainter {
       }
     }
 
-    // Days X axis
+    // Draw the X-axis (day labels)
     for (int i = 0; i < days.length; i++) {
       final double x = 35 + i * xStep;
       final double y = size.height - 30;
 
+      // Draw day labels
       textPainter.text = TextSpan(
         text: days[i],
         style: const TextStyle(color: Colors.grey, fontSize: 10),
@@ -109,7 +123,7 @@ class _TemperatureChartPainter extends CustomPainter {
       textPainter.paint(canvas, Offset(x - (textPainter.width / 1.5), y + 5));
     }
 
-    // High Temperature Shadow
+    // Draw the shadow for the high temperature line
     final Path highShadowPath = Path();
     for (int i = 0; i < highTemperatures.length; i++) {
       final double x = 30 + i * xStep;
@@ -127,7 +141,7 @@ class _TemperatureChartPainter extends CustomPainter {
     highShadowPath.close();
     canvas.drawPath(highShadowPath, highShadowPaint);
 
-    // Low Temperature Shadow
+    // Draw the shadow for the low temperature line
     final Path lowShadowPath = Path();
     for (int i = 0; i < lowTemperatures.length; i++) {
       final double x = 30 + i * xStep;
@@ -145,7 +159,7 @@ class _TemperatureChartPainter extends CustomPainter {
     lowShadowPath.close();
     canvas.drawPath(lowShadowPath, lowShadowPaint);
 
-    // High Temperature Line
+    // Draw the high temperature line
     final Path highPath = Path();
     for (int i = 0; i < highTemperatures.length; i++) {
       final double x = 30 + i * xStep;
@@ -160,7 +174,7 @@ class _TemperatureChartPainter extends CustomPainter {
     }
     canvas.drawPath(highPath, highTempPaint);
 
-    // Low Temperature Line
+    // Draw the low temperature line
     final Path lowPath = Path();
     for (int i = 0; i < lowTemperatures.length; i++) {
       final double x = 30 + i * xStep;

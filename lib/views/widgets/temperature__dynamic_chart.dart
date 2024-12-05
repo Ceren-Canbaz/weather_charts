@@ -46,21 +46,13 @@ class _TemperatureChartPainter extends CustomPainter {
 
     final Paint highTempPaint = Paint()
       ..color = Colors.blue
-      ..strokeWidth = 1
+      ..strokeWidth = 4
       ..style = PaintingStyle.stroke;
 
     final Paint lowTempPaint = Paint()
       ..color = Colors.lightBlueAccent
-      ..strokeWidth = 1
+      ..strokeWidth = 4
       ..style = PaintingStyle.stroke;
-
-    final Paint highShadowPaint = Paint()
-      ..color = Colors.blue.withOpacity(0.3)
-      ..style = PaintingStyle.fill;
-
-    final Paint lowShadowPaint = Paint()
-      ..color = Colors.lightBlueAccent.withOpacity(0.3)
-      ..style = PaintingStyle.fill;
 
     final TextPainter textPainter = TextPainter(
       textAlign: TextAlign.center,
@@ -109,42 +101,6 @@ class _TemperatureChartPainter extends CustomPainter {
       textPainter.layout();
       textPainter.paint(canvas, Offset(x - textPainter.width / 2, y + 5));
     }
-
-    // High Temperature Shadow
-    final Path highShadowPath = Path();
-    for (int i = 0; i < highTemperatures.length; i++) {
-      final double x = 30 + i * xStep;
-      final double y = size.height - 40 - (highTemperatures[i] - minY) * yStep;
-
-      if (i == 0) {
-        highShadowPath.moveTo(x, y);
-      } else {
-        highShadowPath.lineTo(x, y);
-      }
-    }
-    // Close the path to create the shadow area
-    highShadowPath.lineTo(size.width - 30, size.height - 40);
-    highShadowPath.lineTo(30, size.height - 40);
-    highShadowPath.close();
-    canvas.drawPath(highShadowPath, highShadowPaint);
-
-    // Low Temperature Shadow
-    final Path lowShadowPath = Path();
-    for (int i = 0; i < lowTemperatures.length; i++) {
-      final double x = 30 + i * xStep;
-      final double y = size.height - 40 - (lowTemperatures[i] - minY) * yStep;
-
-      if (i == 0) {
-        lowShadowPath.moveTo(x, y);
-      } else {
-        lowShadowPath.lineTo(x, y);
-      }
-    }
-    // Close the path to create the shadow area
-    lowShadowPath.lineTo(size.width - 30, size.height - 40);
-    lowShadowPath.lineTo(30, size.height - 40);
-    lowShadowPath.close();
-    canvas.drawPath(lowShadowPath, lowShadowPaint);
 
     // High Temperature Line
     final Path highPath = Path();
