@@ -22,7 +22,7 @@ class RainfallChartPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final double chartPadding = 40.0; // Padding for the chart
+    const double chartPadding = 40.0; // Padding for the chart
     final double chartHeight = size.height - chartPadding * 3;
     final double chartWidth = size.width - chartPadding * 2;
 
@@ -33,8 +33,8 @@ class RainfallChartPainter extends CustomPainter {
 
     // Paint objects
     final Paint linePaint = Paint()
-      ..color = Colors.blue
-      ..strokeWidth = 2.0
+      ..color = Colors.blue.shade900
+      ..strokeWidth = 4.0
       ..style = PaintingStyle.stroke;
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
@@ -43,11 +43,11 @@ class RainfallChartPainter extends CustomPainter {
     // Step size for bars and X-axis
     double xOffset = chartPadding;
     final double stepX = chartWidth / (dailyWeatherList.length - 1);
-    final double barWidth = stepX / 2;
+    final double barWidth = stepX / 4;
 
     // Gradient for bars
     final Gradient barGradient = LinearGradient(
-      colors: [Colors.lightBlue.shade200, Colors.blue],
+      colors: [Colors.lightBlue.shade100, Colors.blue],
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
     );
