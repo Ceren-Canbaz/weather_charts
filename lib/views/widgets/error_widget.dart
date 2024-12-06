@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 
-class ErrorTextWidget extends StatelessWidget {
-  final WeatherViewModel viewModel;
-
-  const ErrorTextWidget({super.key, required this.viewModel});
+class ErrorContainer extends StatelessWidget {
+  const ErrorContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final viewModel = WeatherViewModelNotifier.of(context);
+
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -18,7 +18,7 @@ class ErrorTextWidget extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           ElevatedButton(
-            onPressed: () => viewModel.fetchWeathers(),
+            onPressed: viewModel.fetchWeathers,
             child: const Text("Retry"),
           ),
         ],

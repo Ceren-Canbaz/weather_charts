@@ -2,34 +2,47 @@ import 'package:flutter/material.dart';
 import 'package:weather_charts/utils/enums.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 import 'package:weather_charts/views/widgets/error_widget.dart';
-import 'package:weather_charts/views/widgets/initial_widget.dart';
+
 import 'package:weather_charts/views/widgets/loaded_widget.dart';
 import 'package:weather_charts/views/widgets/loading_widget.dart';
 
-class WeatherView extends StatelessWidget {
-  final WeatherViewModel viewModel;
+class WeatherView extends StatefulWidget {
+  const WeatherView({super.key});
 
-  WeatherView({super.key, required this.viewModel}) {
-    viewModel.fetchWeathers();
+  @override
+  State<WeatherView> createState() => _WeatherViewState();
+}
+
+class _WeatherViewState extends State<WeatherView> {
+  late WeatherViewModel viewModel;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    viewModel = WeatherViewModelNotifier.of(context);
+
+    if (viewModel.stateNotifier.value == WeatherState.initial) {
+      viewModel.fetchWeathers();
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Weather Charts"),
+      ),
       body: ValueListenableBuilder<WeatherState>(
         valueListenable: viewModel.stateNotifier,
         builder: (context, state, _) {
           switch (state) {
             case WeatherState.initial:
-              return const InitialWidget();
             case WeatherState.loading:
               return const LoadingWidget();
             case WeatherState.loaded:
-              return LoadedWidget(viewModel: viewModel);
+              return const LoadedWidget();
             case WeatherState.error:
-              return ErrorTextWidget(
-                viewModel: viewModel,
-              );
+              return const ErrorContainer();
           }
         },
       ),
