@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 const TextTheme textTheme = TextTheme(
@@ -90,9 +88,9 @@ const TextTheme textTheme = TextTheme(
 );
 final ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
-  scaffoldBackgroundColor: Colors.black, // Arka plan siyah
+  scaffoldBackgroundColor: Colors.black,
   primaryColor: Colors.white,
-  textTheme: textTheme, // Burada tipografi bağlanıyor
+  textTheme: textTheme,
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.black,
     elevation: 0,

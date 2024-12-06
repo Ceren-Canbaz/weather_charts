@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:weather_charts/views/widgets/weather_widgets/weather_icon.dart';
 
+/// A widget that displays a card for a specific day's weather information.
+///
+/// The card includes the following:
+/// - A weather icon based on the high temperature.
+/// - The day of the week.
+/// - High and low temperature values.
+///
+/// This widget is designed with padding, a gradient background, and a shadow
+/// to provide a visually appealing layout. It uses the `WeatherIcon` widget
+/// to display an appropriate icon based on the `highTemp` value.
+
 class WeatherDayCard extends StatelessWidget {
   final String day;
   final double highTemp;

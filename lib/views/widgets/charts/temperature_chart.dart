@@ -100,7 +100,7 @@ class _TemperatureChartPainter extends CustomPainter {
         final int labelValue = i * 10;
         textPainter.text = TextSpan(
           text: "$labelValue°",
-          style: const TextStyle(color: Colors.grey, fontSize: 10),
+          style: const TextStyle(color: Colors.grey, fontSize: 14),
         );
         textPainter.layout();
 

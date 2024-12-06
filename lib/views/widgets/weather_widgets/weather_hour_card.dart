@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:weather_charts/models/weather.dart';
 
+/// A card widget that displays detailed weather information for a specific hour.
+///
+/// The card includes:
+/// - Formatted time in 12-hour format with AM/PM.
+/// - Temperature for the hour.
+/// - Wind speed and rainfall information.
+/// - Styled with a gradient background, rounded corners, and shadow.
+
 class WeatherHourCard extends StatelessWidget {
   final Weather weather;
 

@@ -3,8 +3,21 @@ import 'package:weather_charts/utils/enums.dart';
 import 'package:weather_charts/views/chart_detail_view.dart';
 import 'package:weather_charts/views/widgets/weather_widgets/chart_card_button.dart';
 
-class ChartGrid extends StatelessWidget {
-  const ChartGrid({
+/// A widget that displays a grid of chart options.
+///
+/// This widget consists of:
+/// - A [GridView] with a fixed number of columns (2).
+/// - Each grid item is a [ChartCardButton] that represents a specific chart.
+/// - When a chart button is tapped, it navigates to the `ChartDetailView`
+///   for the selected chart.
+///
+/// Key Features:
+/// - Dynamic grid generation using `Chart.values`.
+/// - Displays chart images and titles.
+/// - Responsive layout with spacing between grid items.
+
+class ChartButtonGrid extends StatelessWidget {
+  const ChartButtonGrid({
     super.key,
   });
 

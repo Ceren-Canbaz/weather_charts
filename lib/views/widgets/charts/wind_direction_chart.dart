@@ -3,6 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:weather_charts/models/weather.dart';
 import 'package:weather_charts/utils/app_constants.dart';
 
+/// The [WindDirectionChart] widget visualizes wind data as a circular chart
+/// with sectors representing wind directions. Each sector is color-coded
+/// based on the average wind speed for that direction.
+///
+/// Key Features:
+/// - Draws a grid with concentric circles for reference.
+/// - Displays cardinal directions (N, NE, E, etc.) as labels around the chart.
+/// - Represents wind data using color-coded sectors, where:
+///   - The color intensity represents wind speed.
+///   - The sector size corresponds to the direction's average wind speed.
+///
+/// Usage:
+/// - Provide a list of [Weather] objects as [hourlyWeather] to populate the chart.
+///
+/// Components:
+/// - [_WindDirectionPainter] : Handles the drawing logic for the chart.
+/// - [_groupWindData] : Groups wind speed data by cardinal direction.
+/// - [_getDirectionFromDegrees] : Converts wind direction in degrees to a cardinal direction.
+/// - [_getColorForSpeed] : Returns a color based on wind speed.
 class WindDirectionChart extends StatelessWidget {
   final List<Weather> hourlyWeather;
 
@@ -80,7 +99,8 @@ class _WindDirectionPainter extends CustomPainter {
 
         textPainter.text = TextSpan(
           text: directions[i],
-          style: const TextStyle(color: Colors.white, fontSize: 16),
+          style: const TextStyle(
+              color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600),
         );
         textPainter.layout();
         textPainter.paint(

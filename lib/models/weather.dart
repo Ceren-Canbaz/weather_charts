@@ -1,5 +1,15 @@
 import 'package:weather_charts/models/wind.dart';
 
+/// Represents the weather data for a specific time.
+///
+/// The [Weather] class includes:
+/// - [timeStamp] : The timestamp for the weather data.
+/// - [temperature] : The temperature at the specified time.
+/// - [wind] : A [Wind] object containing wind speed and direction.
+/// - [rainfall] : The amount of rainfall at the specified time.
+///
+/// Provides:
+/// - A factory constructor (`fromMap`) to parse weather data from a map.
 class Weather {
   final DateTime timeStamp;
   final double temperature;

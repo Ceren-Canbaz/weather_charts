@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// A widget that displays an initial message for the weather app
 class InitialWidget extends StatelessWidget {
   const InitialWidget({super.key});
 
@@ -7,8 +8,8 @@ class InitialWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: Text(
-        "Press button to load weather",
-        style: TextStyle(fontSize: 16),
+        "Weather App", // Initial message text
+        style: TextStyle(fontSize: 16), // Text style with font size
       ),
     );
   }

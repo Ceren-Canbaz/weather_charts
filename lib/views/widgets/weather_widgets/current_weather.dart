@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 import 'package:weather_charts/views/widgets/weather_widgets/weather_icon.dart';
 
+/// A widget that displays the current weather information.
+///
+/// This widget includes:
+/// - A [WeatherIcon] to visually represent the current temperature.
+/// - The current temperature displayed in large text.
+/// - Additional details such as:
+///   - Wind speed, represented with an icon and text.
+///   - Rainfall amount, represented with an icon and text.
+
 class CurrentWeatherWidget extends StatelessWidget {
   const CurrentWeatherWidget({super.key});
 
