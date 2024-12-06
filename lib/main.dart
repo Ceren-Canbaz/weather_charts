@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_charts/theme/theme.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 import 'package:weather_charts/views/weather_view.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       notifier: weatherViewModel,
       child: MaterialApp(
         title: "Weather Charts",
-        theme: ThemeData(useMaterial3: true),
+        theme: darkTheme,
         home: const WeatherView(),
       ),
     );

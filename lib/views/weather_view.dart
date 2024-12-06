@@ -29,9 +29,7 @@ class _WeatherViewState extends State<WeatherView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Weather Charts"),
-      ),
+      backgroundColor: Colors.black,
       body: ValueListenableBuilder<WeatherState>(
         valueListenable: viewModel.stateNotifier,
         builder: (context, state, _) {
