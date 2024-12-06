@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:weather_charts/models/weather.dart';
+import 'package:weather_charts/utils/app_constants.dart';
 
 class WindDirectionChart extends StatelessWidget {
   final List<Weather> hourlyWeather;
@@ -48,7 +49,7 @@ class _WindDirectionPainter extends CustomPainter {
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.4)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
+      ..strokeWidth = gridStrokeWidth;
 
     final Paint sectorPaint = Paint()..style = PaintingStyle.fill;
 

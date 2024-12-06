@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:weather_charts/utils/app_constants.dart';
 
 class TemperatureDynamicChart extends StatelessWidget {
   final List<double> highTemperatures;
   final List<double> lowTemperatures;
-  final List<String> days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  final List<String> days = dayList;
 
-  TemperatureDynamicChart({
+  const TemperatureDynamicChart({
     super.key,
     required this.highTemperatures,
     required this.lowTemperatures,
@@ -42,16 +43,16 @@ class _TemperatureChartPainter extends CustomPainter {
 
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
-      ..strokeWidth = 1;
+      ..strokeWidth = gridStrokeWidth;
 
     final Paint highTempPaint = Paint()
       ..color = Colors.blue
-      ..strokeWidth = 4
+      ..strokeWidth = lineStrokeWidth
       ..style = PaintingStyle.stroke;
 
     final Paint lowTempPaint = Paint()
       ..color = Colors.lightBlueAccent
-      ..strokeWidth = 4
+      ..strokeWidth = lineStrokeWidth
       ..style = PaintingStyle.stroke;
 
     final TextPainter textPainter = TextPainter(

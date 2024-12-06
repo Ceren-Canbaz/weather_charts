@@ -1,12 +1,15 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
+import 'package:weather_charts/utils/app_constants.dart';
 
 class TemperatureChart extends StatelessWidget {
   final List<double> highTemperatures;
   final List<double> lowTemperatures;
-  final List<String> days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  final List<String> days = dayList;
 
   // Constructor to initialize high and low temperatures
-  TemperatureChart({
+  const TemperatureChart({
     super.key,
     required this.highTemperatures,
     required this.lowTemperatures,
@@ -46,18 +49,18 @@ class _TemperatureChartPainter extends CustomPainter {
     // Paint for the grid lines
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
-      ..strokeWidth = 1;
+      ..strokeWidth = gridStrokeWidth;
 
     // Paint for the high temperature line
     final Paint highTempPaint = Paint()
       ..color = Colors.blue
-      ..strokeWidth = 4
+      ..strokeWidth = lineStrokeWidth
       ..style = PaintingStyle.stroke;
 
     // Paint for the low temperature line
     final Paint lowTempPaint = Paint()
       ..color = Colors.lightBlueAccent
-      ..strokeWidth = 4
+      ..strokeWidth = lineStrokeWidth
       ..style = PaintingStyle.stroke;
 
     // Paint for the shadow under the high temperature line

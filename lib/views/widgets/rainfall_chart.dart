@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:weather_charts/models/entities/daily_weather.dart';
+import 'package:weather_charts/utils/app_constants.dart';
 
 class RainfallChart extends StatelessWidget {
   final List<DailyWeather> dailyWeatherList;
 
-  RainfallChart({required this.dailyWeatherList});
+  const RainfallChart({super.key, required this.dailyWeatherList});
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +35,11 @@ class RainfallChartPainter extends CustomPainter {
     // Paint objects
     final Paint linePaint = Paint()
       ..color = Colors.blue.shade900
-      ..strokeWidth = 4.0
+      ..strokeWidth = lineStrokeWidth
       ..style = PaintingStyle.stroke;
     final Paint gridPaint = Paint()
       ..color = Colors.grey.withOpacity(0.3)
-      ..strokeWidth = 0.5;
+      ..strokeWidth = gridStrokeWidth;
 
     // Step size for bars and X-axis
     double xOffset = chartPadding;
@@ -188,7 +189,7 @@ class RainfallChartPainter extends CustomPainter {
     );
 
     final TextPainter dayTextPainter = TextPainter(
-      text: TextSpan(
+      text: const TextSpan(
         text: "Day",
         style: TextStyle(color: Colors.grey, fontSize: 12),
       ),
@@ -208,7 +209,7 @@ class RainfallChartPainter extends CustomPainter {
     );
 
     final TextPainter totalTextPainter = TextPainter(
-      text: TextSpan(
+      text: const TextSpan(
         text: "Total",
         style: TextStyle(color: Colors.grey, fontSize: 12),
       ),
@@ -242,7 +243,7 @@ class RainfallChartPainter extends CustomPainter {
   }
 
   String _getDayName(int index) {
-    const List<String> days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    const List<String> days = dayList;
     return days[index % 7];
   }
 
