@@ -9,7 +9,7 @@ class RainfallChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomPaint(
-      size: Size(double.infinity, 300), // Canvas size
+      size: const Size(double.infinity, 300), // Canvas size
       painter: RainfallChartPainter(dailyWeatherList),
     );
   }
@@ -29,6 +29,7 @@ class RainfallChartPainter extends CustomPainter {
     // Maximum rainfall values
     final double maxTotalRainfall = _calculateMaxTotalRainfall();
     final double maxHourlyRainfall = _calculateMaxHourlyRainfall();
+    final double middleRainfall = maxTotalRainfall / 2; // Mid value for Y-axis
 
     // Paint objects
     final Paint linePaint = Paint()
@@ -51,10 +52,10 @@ class RainfallChartPainter extends CustomPainter {
       end: Alignment.bottomCenter,
     );
 
-    // Legend (Day and Total labels)
+    // Draw the legend at the top
     _drawLegend(canvas, chartPadding, chartWidth);
 
-    // Horizontal grid lines
+    // Draw the grid lines and right-side Y-axis values (0, mid, max)
     const int yDivisions = 8;
     for (int i = 0; i <= yDivisions; i++) {
       final double y =
@@ -66,11 +67,37 @@ class RainfallChartPainter extends CustomPainter {
         Offset(chartPadding + chartWidth, y),
         gridPaint,
       );
+
+      // Only display 3 values: 0, mid, and max
+      if (i == 0 || i == yDivisions / 2 || i == yDivisions) {
+        String label = '';
+        if (i == 0) {
+          label = '0';
+        } else if (i == yDivisions / 2) {
+          label = middleRainfall.toStringAsFixed(1);
+        } else if (i == yDivisions) {
+          label = maxTotalRainfall.toStringAsFixed(1);
+        }
+
+        // Draw right-side Y-axis labels
+        final TextPainter textPainter = TextPainter(
+          text: TextSpan(
+            text: label,
+            style: const TextStyle(color: Colors.grey, fontSize: 10),
+          ),
+          textAlign: TextAlign.right,
+          textDirection: TextDirection.ltr,
+        );
+        textPainter.layout();
+        textPainter.paint(
+          canvas,
+          Offset(chartPadding + chartWidth + 20, y - textPainter.height / 2),
+        );
+      }
     }
 
-    // Line graph points
+    // Draw bars and X-axis day labels
     final List<Offset> linePoints = [];
-
     for (int i = 0; i < dailyWeatherList.length; i++) {
       final dailyWeather = dailyWeatherList[i];
 
@@ -140,7 +167,7 @@ class RainfallChartPainter extends CustomPainter {
       canvas.drawPath(path, linePaint);
     }
 
-    // X-axis
+    // Draw X-axis
     canvas.drawLine(
       Offset(chartPadding, chartPadding * 2 + chartHeight),
       Offset(chartPadding + chartWidth, chartPadding * 2 + chartHeight),
