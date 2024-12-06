@@ -1,21 +1,26 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:weather_charts/models/entities/daily_weather.dart';
+import 'package:weather_charts/services/weather_service.dart';
+import 'package:weather_charts/utils/enums.dart';
 
-import '../services/weather_service.dart';
-
-class WeatherViewModel extends ChangeNotifier {
+class WeatherViewModel {
   final WeatherService _weatherService = WeatherService();
 
-  final ValueNotifier<List<DailyWeather>> weatherData = ValueNotifier([]);
+  // State ve veriler için ValueNotifier kullanımı
+  final ValueNotifier<WeatherState> stateNotifier =
+      ValueNotifier(WeatherState.initial);
+  final ValueNotifier<List<DailyWeather>> weathersNotifier = ValueNotifier([]);
 
-  Future<void> loadWeatherData() async {
+  Future<void> fetchWeathers() async {
+    stateNotifier.value = WeatherState.loading;
+
     try {
-      final data = await _weatherService.getWeathers();
-      weatherData.value = data;
-      weatherData.notifyListeners();
+      final weathers = await _weatherService.getWeathers();
+      weathersNotifier.value = weathers;
+      stateNotifier.value = WeatherState.loaded;
     } catch (e) {
-      // Handle errors
-      debugPrint('Error loading weather data: $e');
+      print("Error: $e");
+      stateNotifier.value = WeatherState.error;
     }
   }
 }

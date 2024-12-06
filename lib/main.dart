@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 import 'package:weather_charts/views/weather_view.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const WeatherView(),
+      home: WeatherView(),
     );
   }
 }
