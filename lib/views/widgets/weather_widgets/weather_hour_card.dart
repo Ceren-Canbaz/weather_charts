@@ -23,12 +23,7 @@ class WeatherHourCard extends StatelessWidget {
         gradient: const LinearGradient(
           colors: [
             Color(0xFF5D9CEC),
-            Color.fromARGB(
-              255,
-              7,
-              31,
-              60,
-            ),
+            Color.fromARGB(255, 34, 74, 122),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,

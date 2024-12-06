@@ -17,7 +17,7 @@ class CurrentWeatherWidget extends StatelessWidget {
       children: [
         WeatherIcon(
           temperature: viewModel.getCurrentWeather().temperature,
-          size: 64,
+          size: 54,
         ),
         Text(
           '${currentWeather.temperature.toStringAsFixed(1)}°C',

@@ -20,7 +20,10 @@ class WeatherDayCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          gradient: generateGradient(highTemp),
+          gradient: const LinearGradient(colors: [
+            Color.fromARGB(255, 109, 108, 115),
+            Color.fromARGB(255, 162, 160, 160),
+          ]),
           borderRadius: BorderRadius.circular(12.0),
           boxShadow: [
             BoxShadow(
@@ -33,7 +36,10 @@ class WeatherDayCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            WeatherIcon(temperature: highTemp),
+            WeatherIcon(
+              temperature: highTemp,
+              size: 42,
+            ),
             const SizedBox(width: 16),
             Expanded(
               child: Row(
@@ -58,31 +64,6 @@ class WeatherDayCard extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-LinearGradient generateGradient(double temperature) {
-  if (temperature <= 0) {
-    return const LinearGradient(
-      colors: [Color(0xFF4A90E2), Color(0xFF50E3C2)],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-    );
-  } else if (temperature > 0 && temperature <= 20) {
-    return const LinearGradient(
-      colors: [Color(0xFF50E3C2), Color.fromARGB(255, 186, 183, 88)],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-    );
-  } else {
-    return const LinearGradient(
-      colors: [
-        Color.fromARGB(255, 177, 106, 65),
-        Color.fromARGB(255, 198, 168, 31)
-      ],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
     );
   }
 }
