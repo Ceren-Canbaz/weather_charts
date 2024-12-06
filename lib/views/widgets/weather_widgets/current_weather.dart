@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
+import 'package:weather_charts/views/widgets/weather_widgets/weather_icon.dart';
 
 class CurrentWeatherWidget extends StatelessWidget {
   const CurrentWeatherWidget({super.key});
@@ -14,7 +15,10 @@ class CurrentWeatherWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(height: 8),
+        WeatherIcon(
+          temperature: viewModel.getCurrentWeather().temperature,
+          size: 64,
+        ),
         Text(
           '${currentWeather.temperature.toStringAsFixed(1)}°C',
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
@@ -36,7 +40,6 @@ class CurrentWeatherWidget extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 4),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

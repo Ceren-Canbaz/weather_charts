@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_charts/views/widgets/weather_widgets/weather_icon.dart';
 
 class WeatherDayCard extends StatelessWidget {
   final String day;
@@ -15,9 +16,9 @@ class WeatherDayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(6.0),
       child: Container(
-        padding: const EdgeInsets.all(14.0),
+        padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           gradient: generateGradient(highTemp),
           borderRadius: BorderRadius.circular(12.0),
@@ -32,29 +33,24 @@ class WeatherDayCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(
-              Icons.wb_sunny_outlined,
-              size: 42,
-              color: Theme.of(context).colorScheme.primary,
-            ),
+            WeatherIcon(temperature: highTemp),
             const SizedBox(width: 16),
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
                     day,
-                    style:
-                        Theme.of(context).textTheme.headlineMedium?.copyWith(),
+                    style: Theme.of(context).textTheme.titleSmall?.copyWith(),
                   ),
-                  const SizedBox(height: 8),
                   Text(
                     'High: ${highTemp.toStringAsFixed(1)}°C',
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(),
                   ),
                   Text(
                     'Low: ${lowTemp.toStringAsFixed(1)}°C',
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(),
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(),
                   ),
                 ],
               ),
@@ -75,13 +71,16 @@ LinearGradient generateGradient(double temperature) {
     );
   } else if (temperature > 0 && temperature <= 20) {
     return const LinearGradient(
-      colors: [Color(0xFF50E3C2), Color(0xFFE9E678)],
+      colors: [Color(0xFF50E3C2), Color.fromARGB(255, 186, 183, 88)],
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
     );
   } else {
     return const LinearGradient(
-      colors: [Color.fromARGB(255, 244, 142, 83), Color(0xFFFFD200)],
+      colors: [
+        Color.fromARGB(255, 177, 106, 65),
+        Color.fromARGB(255, 198, 168, 31)
+      ],
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
     );

@@ -14,15 +14,17 @@ class WeekWeather extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: weathers.map((weather) {
-        return WeatherDayCard(
-          day: dayList[weathers.indexOf(
-            weather,
-          )],
-          highTemp: weather.highTemperature,
-          lowTemp: weather.lowTemperature,
-        );
-      }).toList(),
+      children: weathers.map(
+        (weather) {
+          return WeatherDayCard(
+            day: dayList[weathers.indexOf(
+              weather,
+            )],
+            highTemp: weather.highTemperature,
+            lowTemp: weather.lowTemperature,
+          );
+        },
+      ).toList(),
     );
   }
 }
