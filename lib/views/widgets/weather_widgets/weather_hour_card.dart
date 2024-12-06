@@ -21,7 +21,15 @@ class WeatherHourCard extends StatelessWidget {
       width: 120,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFF5D9CEC), Color.fromARGB(255, 20, 48, 80)],
+          colors: [
+            Color(0xFF5D9CEC),
+            Color.fromARGB(
+              255,
+              7,
+              31,
+              60,
+            ),
+          ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),

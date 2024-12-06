@@ -3,7 +3,7 @@ import 'package:weather_charts/utils/enums.dart';
 import 'package:weather_charts/viewmodels/weather_viewmodel.dart';
 import 'package:weather_charts/views/widgets/error_widget.dart';
 
-import 'package:weather_charts/views/widgets/loaded_widget.dart';
+import 'package:weather_charts/views/widgets/home_widget.dart';
 import 'package:weather_charts/views/widgets/loading_widget.dart';
 
 class WeatherView extends StatefulWidget {
@@ -38,7 +38,7 @@ class _WeatherViewState extends State<WeatherView> {
             case WeatherState.loading:
               return const LoadingWidget();
             case WeatherState.loaded:
-              return const LoadedWidget();
+              return const HomeView();
             case WeatherState.error:
               return const ErrorContainer();
           }
