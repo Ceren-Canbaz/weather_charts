@@ -1,6 +1,7 @@
 # **Weather Charts**
 
 A Flutter-based application to visualize weather data through dynamic charts and intuitive UI components.
+![](https://github.com/Ceren-Canbaz/weather_charts/blob/main/assets/project_captures/weather_charts_usage.gif)
 
 ---
 
@@ -19,6 +20,7 @@ A Flutter-based application to visualize weather data through dynamic charts and
 
 
 <p align="center">
+  
   <img src="https://github.com/Ceren-Canbaz/weather_charts/blob/main/assets/project_captures/home.png" alt="Temperature Chart" width="200"/>
   <img src="https://github.com/Ceren-Canbaz/weather_charts/blob/main/assets/project_captures/home_2.png" alt="Temperature Chart" width="200"/>
   <img src="https://github.com/Ceren-Canbaz/weather_charts/blob/main/assets/project_captures/rainfall_chart.png" alt="Temperature Chart" width="200"/>
